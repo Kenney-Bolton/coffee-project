@@ -84,7 +84,15 @@ fieldset {
 .btn-block {
     /* This element should use 100% of the width */
     width: 100%;
-
+}
+#addCoffee{
+    /*margin: 0;*/
+    /*height: 225px;*/
+    /*width: 300px;*/
+    float: right;
+    /*text-align: center;*/
+    color: blue;
+}
 
 /*table {*/
     /*border-collapse: collapse;*/
