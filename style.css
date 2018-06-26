@@ -18,9 +18,9 @@ form {
 }
 
 fieldset {
-    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    /*-webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);*/
+    /*-moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);*/
+    /*box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);*/
     padding: 1em;
     background-color: white;
     border: 0;
@@ -34,10 +34,13 @@ fieldset {
     /* The element with this class should 80% of the width and it must be centered */
     /* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
 
-    width: 80%;
-    margin: 0 auto;
+    width: 130%;
+    float: left;
+
+
 
 }
+
 
 .form-group {
     /* This element must use 100% of the width */
@@ -75,7 +78,7 @@ fieldset {
     padding: 8px;
     color: white;
     font-weight: bold;
-    border: 1px, grey;
+    border: 1px solid grey;
 }
 
 .btn-block {
