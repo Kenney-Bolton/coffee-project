@@ -3,8 +3,8 @@
     // to display list of coffees
     function renderCoffee(coffee) {
         var html = '<tr class="coffee">';
-        html += '<h1>' + coffee.name + '</h1>';
-        html += '<p>' + coffee.roast + '</p>';
+        html += '<div>' + '<span>' + '<h1>' + coffee.name + coffee.roast + '</h1>' + '</span>' + '</div>';
+        html += '<div>' + '<p>' + coffee.name + coffee.roast + '</p>' + '</div>';
         html += '</tr>';
 
         return html;
