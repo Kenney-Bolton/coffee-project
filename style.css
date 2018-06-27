@@ -77,7 +77,7 @@ table {
     margin: 15px 0;
 }
 
-td, th {
+.coffee_roast{
     border: 1px solid white;
     padding: 5px 10px;
 }

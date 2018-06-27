@@ -2,10 +2,10 @@
     "use strict";
     // to display list of coffees
     function renderCoffee(coffee) {
-        var html = '<tr class="coffee">';
-        html += '<h1>' + coffee.name + '</h1>';
-        html += '<p>' + coffee.roast + '</p>';
-        html += '</tr>';
+        var html = '<div>';
+        html += '<div class="col-6 float-left"><span class="coffeeName1"><h1>' + coffee.name + '</h1></span>';
+        html += '<span class="coffee_roast">'+ coffee.roast + '</span></div>';
+        html += '</div>';
 
         return html;
     }
