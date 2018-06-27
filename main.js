@@ -63,7 +63,7 @@
         updateCoffees(roast);
     });
     var nameChange = document.querySelector("#userCoffee1");
-    console.log(nameChange);
+    // console.log(nameChange);
     nameChange.addEventListener("input", function (e) {
         console.log("hello");
         var name = e.target.value;
@@ -85,7 +85,8 @@
         var objId = coffees.length + 1;
         //console.log(objId);
         var obj = {id: objId, name: inputValue, roast: roastValue};
-        //console.log(obj)
+        console.log("hello")
+        console.log(obj);
         coffees.push(obj);
 
         tbody.innerHTML = renderCoffees(coffees);
@@ -99,6 +100,6 @@
     tbody.innerHTML = renderCoffees(coffees);
 
     // submitButton.addEventListener('click', updateCoffees);
-    // submitButton2.addEventListener('click', searchCoffees);
+    submitButton2.addEventListener('click', searchCoffees);
 
 }) ();
