@@ -9,81 +9,82 @@
 
 
 <body>
+
+<div class="container width-50">
     <div align="center"><h1>Coffee!</h1></div>
     <hr>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-6">
-                        <!--Insert 1st column coffee info-->
-                        <div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <td>ID</td>
-                                        <td>NAME</td>
-                                        <td>ROAST</td>
-                                    </tr>
-                                </thead>
-                                <tbody id="coffees"></tbody>
-                            </table>
-                        </div>
 
+    <div class="row ">
+        <div class="col-6 coffees ">
+            <div class="row">
+                <div class="col-6 coffees" >
+                    <!--Insert 1st column coffee info-->
+                    <div>
+                        <table>
+                            <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>NAME</td>
+                                <td>ROAST</td>
+                            </tr>
+                            </thead>
+                            <tbody id="coffees"></tbody>
+                        </table>
                     </div>
 
-                    <div class="col-6">
-                        <!--insert 2nd column coffee info-->
-                    </div>
+                </div>
+
+                <div class="col-6 width-50">
+                    <!--insert 2nd column coffee info-->
                 </div>
             </div>
-            <div class="col-6" >
-                <div class="form-group " >
+        </div>
+        <div class="col-6 coffees " >
+            <div class="form-group width-50" >
+                <form>
+                    <fieldset ><!--FIRST coffee selection form-->
+                        <form>
+                            <label for="roastSelect" class="form-label">Roast</label>
+
+                            <select class="form-control roastSelect">
+                                <option>all</option>
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                        </form>
+                        <label for="coffeeName1" class="form-label">Coffee Name</label>
+                        <input type="text"  class="search  search-query form-control">
+                        <input type="submit" class="submit search btn btn-block"/>
+                    </fieldset>
+                </form>
+            </div> <!--END OF FIRST FORM-->
+
+            <div>
+                <div id="addCoffee" class="width-50"> <hr><h1>Add a Coffee</h1></div>
+                <div class="form-group width-50" >
                     <form>
-                        <fieldset class="width-50"><!--FIRST coffee selection form-->
-                            <label for="roast-selection" class="form-label">Roast</label>
+                        <fieldset ><!--SECOND coffee selection form-->
                             <form>
-                               <select class="form-control roast-selection">
+                                <label for="roastSelect" class="form-label">Roast</label>
+
+                                <select class="form-control roastSelect">
+                                    <option>all</option>
                                     <option>light</option>
                                     <option>medium</option>
                                     <option>dark</option>
                                 </select>
                             </form>
-                            <div class="form-group">
-                                <label for="coffeeName1" class="form-label">Coffee Name</label>
-                                <input type="text"  id="coffeeName1" class="form-control search-query">
-                            </div>
-                            <button class="btn btn-block" id="submit1" type="submit">Submit</button>
+                            <label for="coffeeName2" class="form-label">Name</label>
+                            <input type="text"  class="search  search-query form-control">
+                            <input type="submit" class="submit search btn btn-block"/>
                         </fieldset>
                     </form>
-                </div> <!--END OF FIRST FORM-->
-
-                <div>
-                    <div id="addCoffee" style="border-top: 1px solid lightgrey"><h1>Add a Coffee</h1></div>
-                    <form>
-                        <fieldset class="width-50"><!--SECOND coffee selection form-->
-                            <div class="form-group">
-                                <label for="roast-selection" class="form-label">Roast</label>
-                                <form>
-                                    <select class="form-control roast-selection">
-                                        <option>light</option>
-                                        <option>medium</option>
-                                        <option>dark</option>
-                                    </select>
-                                </form>
-                            </div>
-                            <div class="form-group">
-                                <label for="coffeeName2" class="form-label">Name</label>
-                                <input type="text" id="coffeeName2" name="coffeeName2" class="search-query form-control">
-                            </div>
-                            <button class="btn btn-block" id="submit2" type="submit">Submit</button>
-                        </fieldset>
-                    </form>
-               </div> <!--END OF SECOND FORM-->
-            </div>
+                </div>
+            </div> <!--END OF SECOND FORM-->
         </div>
     </div>
-
+</div>
 
 
 
