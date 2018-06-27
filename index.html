@@ -46,15 +46,15 @@
                         <form>
                             <label for="roastSelect" class="form-label">Roast</label>
 
-                            <select class="form-control roastSelect">
+                            <select id="userRoast1" class="form-control roastSelect">
                                 <option>light</option>
                                 <option>medium</option>
                                 <option>dark</option>
                             </select>
                         </form>
                         <label for="coffeeName1" class="form-label">Coffee Name</label>
-                        <input type="text"  class="search  search-query form-control">
-                        <input type="submit" class="submit search btn btn-block"/>
+                        <input type="text" id="userCoffee1" class="search  search-query form-control userCoffee">
+                        <input type="submit" onClick="writeValues(input)" class="submit search btn btn-block"/>
                     </fieldset>
                 </form>
             </div> <!--END OF FIRST FORM-->
