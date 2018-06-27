@@ -61,13 +61,54 @@
         {id: 14, name: 'French', roast: 'dark'},
     ];
 
+    function searchCoffees () {
+        var roast = document.getElementById('userRoast');
+        var roastValue = roast.value;
+        var input = document.getElementById('userCoffee');
+        var inputValue = input.value;
+        console.log(roastValue);
+        console.log(inputValue);
+        event.preventDefault();
+        var objId = coffees.length + 1;
+        console.log(objId);
+        var obj = {id: objId, name: inputValue, roast: roastValue};
+        console.log(obj)
+        coffees.push(obj);
+
+        // var lowercaseCoffees = coffee.name.toLowerCase();
+        // filteredCoffees.push(inputValue);
+        // var filteredCoffees = [];
+        // filteredCoffees = inputValue;
+        // if (inputValue !== filteredCoffees){
+        //     filteredCoffees.push(coffees.name);
+        // }
+
+
+
+        // coffees.forEach(function (coffee) {
+        //     console.log("test2");
+        //     var lowercaseCoffees = coffee.name.toLowerCase();
+        //     // console.log(coffee.name);
+        //     // console.log(lowercaseCoffees.indexOf(lowercaseInput));
+        //     if (lowercaseCoffees.indexOf(lowercaseInput) !== -1 ) {
+        //         console.log("test3");
+        //         filteredCoffees.push(coffee);
+        // //
+        //     }
+        // });
+        // console.log(filteredCoffees);
+        tbody.innerHTML = renderCoffees(coffees);
+        // return inputValue;
+    }
 
     var tbody = document.querySelector(".coffees");
     var submitButton = document.querySelector(".submit");
+    var submitButton2 = document.querySelector(".submit2");
 
 
     tbody.innerHTML = renderCoffees(coffees);
 
-
     submitButton.addEventListener('click', updateCoffees);
+    submitButton2.addEventListener('click', searchCoffees);
+
 }) ();
